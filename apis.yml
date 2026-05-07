@@ -19,6 +19,12 @@ apis: []
 common:
   - type: Website
     url: https://www.zf.com/
+  - type: Plans
+    url: plans/zf-friedrichshafen-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/zf-friedrichshafen-rate-limits.yml
+  - type: FinOps
+    url: finops/zf-friedrichshafen-finops.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

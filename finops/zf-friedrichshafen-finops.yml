@@ -1,0 +1,76 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: ZF Friedrichshafen
+providerId: zf-friedrichshafen
+created: '2026-05-06'
+modified: '2026-05-06'
+reconciled: false
+tags:
+- Automotive
+- Tier 1 Supplier
+- Driveline
+- Chassis
+- Safety
+- ADAS
+- FinOps
+- Cost Management
+- FOCUS
+description: FOCUS-aligned FinOps placeholder for ZF Friedrichshafen. As a Tier 1 automotive supplier, no public
+  billing-model details, meters, or invoice schema are published. This artifact records the absence so consumers
+  know to source commercial terms from the provider directly.
+notes: ZF Friedrichshafen does not publish a public developer pricing page. Commercial terms for any integrations
+  are negotiated directly; invoices are issued under contract terms rather than a metered self-serve API.
+sources:
+- https://www.zf.com/
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: ZF Friedrichshafen
+serviceCategory: Industrial / Automotive
+billingModel:
+  pricingCategory: Custom / Contract
+  billingFrequency: Per-Invoice
+  billingCurrency: USD
+  chargeCategories:
+  - Usage
+  - Purchase
+  - Adjustment
+focusColumns:
+  ServiceName: ZF Friedrichshafen
+  ServiceCategory: Automotive / Mobility Tech
+  ProviderName: ZF Friedrichshafen
+  PublisherName: ZF Friedrichshafen
+  InvoiceIssuerName: ZF Friedrichshafen
+  BillingCurrency: USD
+  ChargeCategory: Usage
+meters:
+- name: contract_usage
+  description: Catch-all meter for contract-governed consumption. Replace with provider-specific line items
+    once an invoice or usage schema is available.
+  unit: varies
+  aggregation: sum
+  dimensions:
+  - contract
+  - consumer
+principles:
+- name: Visibility
+  description: Because the provider does not publish a usage API or self-serve billing dashboard, request
+    invoice copies and contract usage exports directly from the account team and load them into your own
+    FinOps tooling.
+- name: Allocation
+  description: Allocate spend by tagging invoice line items to consuming business units in your ERP / FinOps
+    store; no provider-side tagging surface is available.
+- name: Optimization
+  description: Optimization levers are commercial - renegotiate volume commitments, consolidate accounts,
+    or align contract scope with actual usage at renewal.
+- name: Accountability
+  description: Assign a contract owner who reviews invoices against the negotiated agreement, since usage
+    drift cannot be detected from a published meter feed.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

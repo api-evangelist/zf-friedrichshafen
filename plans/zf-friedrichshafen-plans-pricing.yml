@@ -1,0 +1,47 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: ZF Friedrichshafen
+providerId: zf-friedrichshafen
+created: '2026-05-06'
+modified: '2026-05-06'
+reconciled: false
+tags:
+- Automotive
+- Tier 1 Supplier
+- Driveline
+- Chassis
+- Safety
+- ADAS
+- Plans
+description: ZF Friedrichshafen does not publish a public API plans / pricing page. As a Tier 1 automotive supplier,
+  commercial terms for any platform integrations are negotiated directly through customer or partner agreements.
+  This artifact records the absence of a self-serve commercial surface.
+notes: ZF Friedrichshafen does not publish a public developer pricing page. Commercial terms for any integrations
+  with OEMs, partners, or downstream customers are negotiated directly through individual contracts and
+  governed by EDI / supplier-portal channels rather than published plans.
+sources:
+- https://www.zf.com/
+plans:
+- id: zf-friedrichshafen-contact-sales
+  name: Contact Sales
+  type: enterprise
+  description: No published self-serve plan. Commercial access is arranged directly with the provider; quotas
+    and pricing are governed by individual customer agreements.
+  entries:
+  - label: API Access
+    name: api_access
+    type: flat
+    metric: varies
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Negotiated Commercial Terms
+  - name: Partner Onboarding
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

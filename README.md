@@ -26,6 +26,17 @@ No public APIs have been documented. ZF Friedrichshafen is a Tier 1 automotive s
 ## Common Properties
 
 - [Website](https://www.zf.com/)
+- [Plans](plans/zf-friedrichshafen-plans-pricing.yml) — API Commons Plans 0.1 (placeholder; no public pricing)
+- [RateLimits](rate-limits/zf-friedrichshafen-rate-limits.yml) — API Commons Rate Limits 0.1 (placeholder; no public limits)
+- [FinOps](finops/zf-friedrichshafen-finops.yml) — FOCUS-aligned FinOps Framework 1.0 (placeholder; no public billing surface)
+
+## Artifacts
+
+| Artifact | Path | Notes |
+|---|---|---|
+| Plans | `plans/zf-friedrichshafen-plans-pricing.yml` | Contact-Sales placeholder; commercial terms negotiated per contract. |
+| Rate Limits | `rate-limits/zf-friedrichshafen-rate-limits.yml` | Contract-scoped placeholder; no public throttling thresholds. |
+| FinOps | `finops/zf-friedrichshafen-finops.yml` | FOCUS-aligned placeholder; invoices issued under contract terms. |
 
 ## Maintainers
 

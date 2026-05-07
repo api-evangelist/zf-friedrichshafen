@@ -1,0 +1,44 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: ZF Friedrichshafen
+providerId: zf-friedrichshafen
+created: '2026-05-06'
+modified: '2026-05-06'
+reconciled: false
+tags:
+- Automotive
+- Tier 1 Supplier
+- Driveline
+- Chassis
+- Safety
+- ADAS
+- Rate Limiting
+- Quotas
+- Throttling
+description: ZF Friedrichshafen does not publish concrete rate-limit numbers, throttling thresholds, or response-header
+  conventions. As a Tier 1 automotive supplier, integration limits are governed by partner contracts. This
+  artifact records the gap.
+notes: No public rate-limit documentation reachable. Integration throughput is governed by partner contracts
+  and supplier portal terms.
+sources:
+- https://www.zf.com/
+responseCodes:
+  throttled: 429
+limits:
+- name: Per-contract limits
+  scope: account
+  metric: varies
+  limit: see provider integration agreement
+  notes: No public rate-limit numbers; throughput is governed by individual customer or partner contracts.
+policies:
+- name: Backoff Strategy
+  description: Clients should implement exponential backoff with jitter and honor any Retry-After header
+    that may be returned, even though the provider does not publish formal retry semantics.
+- name: Contract-Scoped Limits
+  description: Quotas, burst, and concurrency ceilings are governed by the individual customer or partner
+    contract rather than a public policy. Coordinate with the provider to confirm thresholds before scaling
+    traffic.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
