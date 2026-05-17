@@ -1,7 +1,7 @@
 aid: zf-friedrichshafen
 url: https://raw.githubusercontent.com/api-evangelist/zf-friedrichshafen/refs/heads/main/apis.yml
 name: ZF Friedrichshafen
-x-type: company
+kind: company
 description: >-
   ZF Friedrichshafen AG is a German global Tier 1 automotive supplier headquartered in Friedrichshafen. ZF designs and manufactures driveline, chassis, active and passive safety, and ADAS technology for passenger cars and commercial vehicles. ZF acquired TRW Automotive in 2015.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
