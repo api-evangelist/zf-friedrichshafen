@@ -17,6 +17,8 @@ modified: '2026-05-06'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/zf-friedrichshafen-ag
   - type: Website
     url: https://www.zf.com/
   - type: Plans
