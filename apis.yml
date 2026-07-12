@@ -17,6 +17,10 @@ modified: '2026-05-06'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/zf-friedrichshafen-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/zf-friedrichshafen-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/zf-friedrichshafen-ag
   - type: Website
