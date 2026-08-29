@@ -4,6 +4,17 @@ name: ZF Friedrichshafen
 kind: company
 description: >-
   ZF Friedrichshafen AG is a German global Tier 1 automotive supplier headquartered in Friedrichshafen. ZF designs and manufactures driveline, chassis, active and passive safety, and ADAS technology for passenger cars and commercial vehicles. ZF acquired TRW Automotive in 2015.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: enterprise
   onboarding: unknown
