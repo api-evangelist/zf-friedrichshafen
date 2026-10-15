@@ -1,0 +1,34 @@
+edges:
+- partner_name: KNX Association (manufacturer members)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://www.knx.org/community/manufacturers
+  category: building automation
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: KNX Association manufacturer members (knx.org/community/manufacturers)
+    spec_file: null
+    standard: KNX (ISO/IEC 14543-3)
+    role: knx-manufacturer-member
+    registered_name: ZF Friedrichshafen AG
+    website: https://switches-sensors.zf.com
+    matched_domain: zf.com
+    matched_by: domain+name-among-holders
+    signal_note: 'participation only: membership is not a product certification'
+    detected_by: sweep-building-automation.py
+    detected: '2026-10-15'
+  detected_by: sweep-building-automation.py
+  first_seen: '2026-10-15'
+generated: '2026-10-15'
+method: searched
+source:
+- https://www.bacnetinternational.net/btl/
+- https://www.knx.org/community/manufacturers
+checked:
+- https://brickschema.org/consortium/
+- https://marketing.project-haystack.org/about-us
+- https://www.bacnetinternational.net/btl/
+- https://www.knx.org/community/manufacturers
